@@ -1,0 +1,271 @@
+body {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(83, 175, 83, 0.3);
+}
+
+#logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(83, 175, 83);
+    letter-spacing: 1px;
+}
+
+#nav_links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#nav_links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+#nav_links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(83, 175, 83);
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+#nav_links a:hover::after {
+    width: 100%;
+}
+
+#nav_links a:hover {
+    color: rgb(83, 175, 83);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 5%;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.leftm {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.leftm h2 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.SubHeading {
+    font-size: 24px;
+    color: rgb(83, 175, 83);
+}
+
+p {
+    font-size: 16px;
+    color: #dcdcdc;
+    max-width: 600px;
+}
+
+img {
+    width: 300px;
+    border-radius: 20%;
+    border: 3px groove rgb(83, 175, 83);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgb(83, 175, 83);
+}
+
+#role {
+    color: rgb(83, 175, 83);
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.socialmedia a {
+    color: rgb(83, 175, 83);
+    font-size: 32px;
+    transition: transform 0.25s ease, color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.socialmedia a:hover {
+    transform: scale(1.3);
+    color: rgb(0, 255, 150);
+    text-shadow: 0 0 8px rgb(83, 175, 83);
+}
+
+.main3 {
+    margin-left: 40px;
+}
+
+.contactlist {
+    list-style: none;
+}
+
+.contactlist a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.contactlist a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(83, 175, 83);
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.contactlist a:hover::after {
+    width: 100%;
+}
+
+.contactlist a:hover {
+    color: rgb(83, 175, 83);
+}
+
+
+.main4 {
+    margin-left: 40px;
+}
+
+.blocksContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blocks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #2a2a2a;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blocks:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgb(83, 175, 83);
+}
+
+.left_icon,
+.right_icon {
+    font-size: 26px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+
+.left_icon::after,
+.right_icon::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: rgb(83, 175, 83);
+    transition: width 0.3s ease;
+}
+
+.left_icon:hover::after,
+.right_icon:hover::after {
+    width: 100%;
+}
+
+.left_icon:hover,
+.right_icon:hover {
+    color: rgb(83, 175, 83);
+}
+
+
+.blocks:hover .right_icon {
+    transform: translateX(6px);
+}
+
+.text {
+    flex: 1;
+}
+
+.text h3 {
+    margin: 0;
+}
+
+.text p {
+    margin-top: 6px;
+    color: #bbb;
+}
+
+.main5{
+    margin-left: 40px;
+    margin-right: 40px
+}
+
+.footer {
+    margin-top: 60px;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid rgba(83, 175, 83, 0.3);
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footerm{
+    color: rgb(83, 175, 83);
+    font-weight: 600;
+}
+
+
+
+
+
